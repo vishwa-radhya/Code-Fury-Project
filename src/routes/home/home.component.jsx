@@ -1,7 +1,8 @@
+import './home.styles.scss';
 
 const Home=()=>{
     return(
-        <div>home</div>
+        <div className='home-div'>home</div>
     )
 }
 export default Home;

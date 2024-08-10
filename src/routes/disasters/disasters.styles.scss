@@ -1,0 +1,27 @@
+.disasters-div{
+    position: absolute;
+    top: 6%;
+    left: 18.5%;
+    height: 90%;
+    width: 76.5%;
+    border-radius: 10px;
+    display: flex;
+    .imgs{
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 10px;
+    }
+    .guides{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .guidelines{
+            height: 50%;
+        }
+        .tips{
+
+        }
+    }
+}

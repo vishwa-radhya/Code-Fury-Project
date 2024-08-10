@@ -1,0 +1,22 @@
+.disaster-img-div{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img{
+        border-radius: 10px;
+        box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+    }
+    button{
+        font-family: inherit;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        padding: 5px;
+        box-shadow: 1px 1px 1px black;
+    }
+    button:hover{
+        background-color: black;
+        color: ghostwhite;
+    }
+}

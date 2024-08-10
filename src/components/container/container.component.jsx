@@ -17,7 +17,7 @@ const Container =()=>{
         <Fragment>
         <div className='container'><i className='fa-solid fa-bars' ref={barsRef} onClick={handleSidebarClick}></i></div>
         <Routes>
-            <Route path='/home' element={<Home/>}></Route>
+            <Route path='/live' element={<Home/>}></Route>
             <Route path='/disasters' element={<Disasters/>}></Route>
             <Route path='/helpline' element={<Helpline/>}></Route>
         </Routes>
