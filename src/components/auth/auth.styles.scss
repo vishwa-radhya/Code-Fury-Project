@@ -1,14 +1,12 @@
 .auth-component{
     border: 1px solid;
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 40%;
     flex-direction: column;
-    top: 10%;
     padding: 20px;
     border-radius: 10px;
+    margin-top: -100px;
     box-shadow: 3px 3px 1px black;
     img{
         border-radius: 10px;
