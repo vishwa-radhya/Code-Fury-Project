@@ -4,12 +4,14 @@
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-color: rgb(172, 212, 187);
+    position: relative;
 
     .fa-bars{
         margin-left: 20px;
         margin-top: 20px;
         padding: 10px;
         border-radius: 10px;
+        z-index: 9;
     }
     .fa-bars:hover{
         background-color: rgb(156, 183, 165);
