@@ -6,22 +6,55 @@
     width: 76.5%;
     border-radius: 10px;
     display: flex;
+    overflow: hidden;
     .imgs{
-        width: 60%;
+        min-width: 60%;
         display: flex;
         flex-wrap: wrap;
         padding: 20px;
         gap: 10px;
+        max-width: 60%;
     }
     .guides{
-        flex: 1;
-        display: flex;
+        width: 40%;
         flex-direction: column;
+        border-radius: 10px;
+        padding: 10px;
         .guidelines{
             height: 50%;
+            ul{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                li{
+                    text-align:justify;
+                }
+            }
         }
-        .tips{
-
+        .kits{
+            ul{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                
+            }
         }
+        transition: .25s ease;
+        overflow: hidden;
+    }
+    
+}
+.no-guide-img{
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    margin-left: 70px;
+    img{
+        border-radius: 10px;
+    }
+    p{
+        text-align: center;
     }
 }

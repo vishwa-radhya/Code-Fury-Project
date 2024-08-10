@@ -7,3 +7,6 @@ body{
     background-color: whitesmoke;
     user-select: none;
 }
+button{
+    cursor: pointer;
+}

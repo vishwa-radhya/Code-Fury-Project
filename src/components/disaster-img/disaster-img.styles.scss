@@ -13,10 +13,14 @@
         border-radius: 10px;
         font-size: 1.1rem;
         padding: 5px;
-        box-shadow: 1px 1px 1px black;
-    }
-    button:hover{
         background-color: black;
         color: ghostwhite;
+        box-shadow: 1px 1px 1px black;
+    }
+    button:active{
+        transform: translateY(2px);
+    }
+    button:hover{
+        scale: 1.05;
     }
 }

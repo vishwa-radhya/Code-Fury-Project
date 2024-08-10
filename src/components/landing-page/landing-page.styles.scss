@@ -18,7 +18,7 @@
         justify-content: center;
         gap: 10px;
         p{
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             text-align: center;
         }
         h4{
@@ -38,7 +38,6 @@
         
     }
     .image{
-        // border: 1px solid;
         height: 100%;
         width:50%;
         display: flex;
@@ -47,6 +46,19 @@
         justify-content: center;
         img{
             border-radius: 10px;
+        }
+    }
+}
+.logo-container{
+    top: 2%;
+    left: 5%;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    p{
+        font-size: 1.8rem;
+        span{
+            font-size: 1rem;
         }
     }
 }

@@ -26,7 +26,7 @@ function App() {
   
   return (
     <Fragment>
-      {user ? (
+      {!user ? (
         <BrowserRouter>
         <Container/>
         </BrowserRouter>

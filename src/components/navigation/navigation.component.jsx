@@ -37,7 +37,7 @@ const Navigation=({isSideBarOpen,setIsSideBarOpen,barsRef})=>{
     return(
             <div className="navigation-bar" style={sideBarStyles} ref={navRef}>
             {openSidebar && <div className='nav-bar-items'>
-                <Link><p><i className="fa-brands fa-space-awesome"></i>Home</p></Link>
+                <Link to='/'><p><i className="fa-brands fa-space-awesome"></i>Home</p></Link>
                 <Link to='/live'><p><i className="fa-solid fa-tower-broadcast"></i>Live</p></Link>
                 <Link to='/disasters'><p><i className="fa-solid fa-tornado"></i>Disasters</p></Link>
                 <Link to='/helpline'><p><i className="fa-solid fa-hand-holding-hand"></i>HelpLine</p></Link>

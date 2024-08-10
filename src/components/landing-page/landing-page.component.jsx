@@ -1,8 +1,14 @@
 import './landing-page.styles.scss';
 import landingPageImg from '../../assets/landing-page-img.jpg'
+import logo from '../../assets/emc-alt-svgrepo-com.svg';
+
 const LandingPage = () =>{
     return(
             <div className='landing-page'>
+            <div className='logo-container'>
+            <img src={logo} className='logo' alt="logo" />
+            <p>Disaster Shield <span>Be Prepared, Stay Safe</span></p>
+            </div>
                 <div className='info'>
                     <h1>Your safety starts here</h1>
                     <p>Over the past decade, over 300 natural disasters occur yearly around the world affecting millions and cost billions.</p><p>Preparation can save lives, minimize damage and reduce stress.</p>
