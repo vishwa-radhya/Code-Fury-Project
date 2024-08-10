@@ -1,0 +1,17 @@
+.empty-space-div{
+    position: absolute;
+    // border: 1px solid;
+    top: 16.5%;
+    height: 79%;
+    width: 11em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 30px;
+    i{
+        margin-left: 10px;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+}
