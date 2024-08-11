@@ -7,7 +7,7 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 40px;
     img{
@@ -15,5 +15,46 @@
     }
     span{
         color: red;
+    }
+    .by-loc{
+        border: 1px solid;
+        border-radius: 10px;
+        position: absolute;
+        top: 20%;
+        box-shadow: 2px 2px 2px black;
+        left: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 15px;
+        margin-right: 30px;
+        i{
+            font-size: 1.5rem;
+        }
+        p{
+            text-align: center;
+            font-size: 1.6rem;
+        }
+        button{
+            font-family: inherit;
+            border-radius: 10px;
+            background-color: black;
+            color: ghostwhite;
+        }
+        button:active{
+            transform: translateY(2px);
+        }
+        .loc-ul{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10px;
+            li{
+                list-style-type: none;
+            }
+        }
     }
 }
