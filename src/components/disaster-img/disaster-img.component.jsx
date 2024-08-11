@@ -17,6 +17,6 @@ DisasterImg.propTypes={
     disasterName:PropTypes.string,
     guideBtnRef:PropTypes.object,
     setIsGuideOpen:PropTypes.func,
-    setSelectedGuide:PropTypes.string,
+    setSelectedGuide:PropTypes.func,
 }
 export default DisasterImg;

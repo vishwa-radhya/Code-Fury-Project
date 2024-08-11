@@ -1,7 +1,7 @@
 import './landing-page.styles.scss';
 import landingPageImg from '../../assets/landing-page-img.jpg'
 import logo from '../../assets/emc-alt-svgrepo-com.svg';
-
+import { Link } from 'react-router-dom';
 const LandingPage = () =>{
     return(
             <div className='landing-page'>
@@ -14,9 +14,9 @@ const LandingPage = () =>{
                     <p>Over the past decade, over 300 natural disasters occur yearly around the world affecting millions and cost billions.</p><p>Preparation can save lives, minimize damage and reduce stress.</p>
                     <h4>Learn how to protect your loved ones in the event of natural disasters</h4>
                     <ol>
-                        <li><i className='fa-solid fa-link'></i>Live Disasters</li>
-                        <li><i className='fa-solid fa-link'></i>Disaster Guidelines</li>
-                        <li><i className='fa-solid fa-link'></i>Helpline Numbers</li>
+                       <Link to='/live'> <li><i className='fa-solid fa-link'></i>Live Disasters</li></Link>
+                       <Link to='/disasters'> <li><i className='fa-solid fa-link'></i>Disaster Guidelines</li></Link>
+                       <Link to='helpline'> <li><i className='fa-solid fa-link'></i>Helpline Numbers</li></Link>
                     </ol>
                 </div>
                 <div className='image'>
