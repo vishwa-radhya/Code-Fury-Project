@@ -4,7 +4,7 @@ const DisasterImg = ({disasterName,guideBtnRef,setIsGuideOpen,setSelectedGuide})
     
     return(
         <div className='disaster-img-div'>
-        <img src={`/src/assets/${disasterName}.jpeg`} alt="" width={200} height={150} />
+        <img src={`https://disaster-shield.netlify.app/assets/${disasterName}.jpeg`} alt="disaster-img" width={200} height={150} />
         <p>{disasterName.toUpperCase()}</p>
         <button  ref={guideBtnRef} onClick={(e)=>{
                 e.stopPropagation()
