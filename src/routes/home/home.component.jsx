@@ -59,7 +59,7 @@ async function fetchNearLocationUpdates(latitude='22.561267',longitude='79.78321
     let options = {
       method: 'GET',
       qs: {lat: `${latitude}`, lng: `${longitude}`, limit: '10', page: '1'},
-      headers: {'x-api-key': '7b18d3746b92cf7ea8e92e22e3a740cecdc3f3e63cfbdbdd14f8328223c31e54', 'Content-type': 'application/json'}
+      headers: {'x-api-key': `${import.meta.env.VITE_AMBEE_API_KEY}`, 'Content-type': 'application/json'}
     };
     try{
       const response = await fetch(url,options);
@@ -78,7 +78,7 @@ async function fetchNearLocationUpdates(latitude='22.561267',longitude='79.78321
       const response = await fetch(url, {
         method: 'GET',
         headers: {
-          'Authorization': 'sk_live_6d04ae84-e53f-4b91-a1ef-a0488fe0b235',
+          'Authorization': `${import.meta.env.VITE_DISASTER_CHECK_IN_API_KEY}`,
           'Content-Type': 'application/json' 
         }
       });
@@ -156,7 +156,7 @@ async function fetchNearLocationUpdates(latitude='22.561267',longitude='79.78321
             </div>
             <div className='cards'>
             {nearLiveData && nearLiveData.map((data)=>{
-              return (<div key={data['source_event_id']}>
+              return (<div key={data['source_event_id']} className='card'>
                   <p>{data.event_name}</p>
                   <p>{data.date}</p>
                   <p>{data.continent}</p>

@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth,GoogleAuthProvider,signInWithPopup,signOut } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyC35bUvwpz7q73qIbAm0mtBrPs91hMw_YI",
-    authDomain: "code-fury-hackathon.firebaseapp.com",
-    projectId: "code-fury-hackathon",
-    storageBucket: "code-fury-hackathon.appspot.com",
-    messagingSenderId: "35573337737",
-    appId: "1:35573337737:web:b15183ada1cbbcd46e4058"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID
   };
 
   const app = initializeApp(firebaseConfig);
